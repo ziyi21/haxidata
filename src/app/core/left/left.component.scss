@@ -1,0 +1,32 @@
+.left-frame{
+  background: #363636;
+  height: 800px;
+  color: white;
+  font-size: 14px;
+  border:1px solid #363636;
+  .left-title{
+    margin-top: 30%;
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+  }
+
+  .left-nav{
+    margin-top: 20%;
+    padding-left: 30px;
+    ul{
+      li{
+        margin-top: 10px;
+        a{
+          color:white;
+          &:hover{
+            color: #d9a60c;
+          }
+          i{
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

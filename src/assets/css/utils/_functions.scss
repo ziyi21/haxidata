@@ -1,0 +1,11 @@
+$base-font-size:14px;
+
+@function calculate-rem($size) {
+  $remSize: $size / $base-font-size;
+  @return $remSize * 1em;
+}
+
+@function map-set($map, $key, $value) {
+  $new: ($key: $value);
+  @return map-merge($map, $new);
+}

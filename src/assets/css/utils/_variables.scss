@@ -1,0 +1,10 @@
+@import "colors";
+@import "functions";
+
+// Font
+$common-font-family:"Microsoft YaHei UI",sans-serif,宋体;
+$common-font-size:calculate-rem(14px);
+
+// Color
+$common-bg-color: map_get($common-colors,'common-bg');
+$common-font-color:map_get($common-colors,'common-font');

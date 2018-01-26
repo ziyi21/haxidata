@@ -1,0 +1,49 @@
+/***************************************
+ * @title: Main Scss                   *
+ * @author: Francis <FgData@qq.com>    *
+ * @date: 2018-1-23                   *
+ ***************************************/
+
+// UI
+@import "../ui/bootstrap/css/bootstrap.min.css";
+@import "bootstrap-reset";
+// Fonts
+@import "../fonts/font-awesome/css/font-awesome.min.css";
+@import "../fonts/iconfont/iconfont.css";
+
+// Sizes
+@import "common/helpers";
+
+// Utils - color/variable/function/mixin
+@import "common/utils";
+
+// Common - animation & effect
+
+// Plugins - ng2 & jquery
+
+
+// ==================== Main ====================//
+// Common
+*{
+  list-style: none;
+  margin:0px;
+  padding:0px;
+}
+.fa{margin-left: 5px;margin-right: 5px}
+
+html{
+  font-size: 14px;// 根元素1Rem==14Px
+}
+
+body{
+  position: relative;
+  font-family: $common-font-family;
+  font-size: $common-font-size; // 默认大小14px，请在utils/function中设置转换函数的基础值$base-font-size
+  color:$common-font-color;
+  background: $common-bg-color no-repeat;
+  background-size: 100%;
+}
+
+// Link
+
+

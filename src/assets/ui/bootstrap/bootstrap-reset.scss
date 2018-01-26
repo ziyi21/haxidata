@@ -1,0 +1,74 @@
+@import "../css/utils/variables";
+
+// ==================== Container ====================//
+// Container
+.container{width:$main-frame-width}
+@media (min-width: $main-frame-width) {
+  .container {
+    max-width: $main-frame-width;
+  }
+}
+
+// ==================== Form-group ====================//
+.form-group{
+  // Label
+  .control-label.labelx{padding: 5px; padding-top: 5px; text-align: right;}
+  // Control
+  .form-control {
+    font-size: 13px;
+    height: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid #e9e9e9;
+    transition-duration: .5s;
+    &:focus {
+      border-color: #42a5f5;
+      box-shadow: none;
+      transition-duration: .5s;
+    }
+    &:focus-feedback {
+      z-index: 10;
+    }
+  }
+  // Group
+  .input-group{
+    .input-group-addon {
+      border: 1px solid #e1e5ea;
+      border-radius: 0;
+      min-width: 45px;
+    }
+    i.form-control-feedback {
+      line-height: 25px;
+    }
+  }
+  &.has-feedback .form-control-feedback{margin-top: 4px}
+}
+
+// ==================== Control ====================//
+//select
+select{
+  background-color: $common-nav-bg-color;
+  height: 30px;
+  padding-left: 0px;
+  option{
+    display: block;
+    height: 20px;
+  }
+}
+
+//pagination
+//修改分页插件默认样式
+ul.pagination {
+  padding: 0px;
+  margin: 0px;
+  li{
+    a{
+      border: none;
+      background: none;
+    }
+    &.disabled a,&.disabled a:hover,&.disabled a:active{
+      background: none;
+      color:#ddd;
+    }
+  }
+}
